@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        margin: 80px auto;
+        font-family: Helvetica;
+        width: 300px;
+        text-align: justify;
+      }
+      p {
+        font-size: 11px;
+        margin-top: 0;
+      }
+      h1 {
+        text-align: center;
+        font-size: 22px;
+        margin: 0 0 5px;
+        padding: 0;
+      }
+      hr {
+        height: 0;
+        border:0;
+        border-top: 1px solid #2b2b2b;
+        opacity: 0.4;
+        margin: 5px 0 20px;
+      }
+      #status {
+        color: green;
+        font-weight: 800;
+        text-align: center;
+        padding: 10px;
+      }
+      input {
+        margin: 0 10px;
+      }
+      input:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Panel or popup?</h1>
+    <p>Popup works just like you'd imagine it to work. Panel acts more like normal app window, also if panel is attached to the bottom of the screen it will show <em>'always-on-top'</em>.</p><p>
+    The catch is that you have to enable panels either via <strong>chrome://flags/</strong> or <strong>--enable-panels</strong></p>
+    <p>I know this isn't ideal, but popup windows don't support alwaysOnTop and this is only way to obtain it.</p>
+    <hr>
+    <input id='w1' type='radio' name='window-type' value='panel'>Panel
+    <input id='w2' type='radio' name='window-type' value='popup'>Popup
+    <input type='button' id='save' value='Save changes'>
+    <br>
+    <div id='status'></div>
+    <script src="options.js"></script>
+  </body>
+</html>
