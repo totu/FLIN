@@ -5,6 +5,15 @@ FLIN is a simple extension that adds a button to Chrome which opens Netflix in a
 
 Version 1.0 brings with it new settings menu which allows you to run FLIN in "always-on-top" mode, due to popular demand.
 
+How to Install
+=======
+
+1. Download the source files
+2. Go to URL: chrome://extensions
+3. Make sure that Developer mode checkbox in the top right-hand corner is checked.
+4. Click Load unpacked extensions... to pop up a file-selection dialog.
+5. Navigate to the source folder and select it. Press OK and extension should be installed.
+
 Note
 ====
 
